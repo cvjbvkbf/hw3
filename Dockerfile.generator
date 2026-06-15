@@ -3,5 +3,4 @@ FROM python:3-alpine
 WORKDIR /app
 COPY generate.py .
 
-# Скрипт ожидает аргумент – путь к папке с результатом
 ENTRYPOINT ["python", "/app/generate.py"]
