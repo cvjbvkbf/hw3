@@ -24,7 +24,7 @@ case "$1" in
     python generate.py local_data
     echo -e "${GREEN}Created local_data/data.csv${NC}"
     ;;
-    
+
   build_reporter)
     echo -e "${GREEN}Building reporter image...${NC}"
     docker build -t data-reporter -f Dockerfile.reporter .
