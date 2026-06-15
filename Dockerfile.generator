@@ -1,0 +1,7 @@
+dockerfile
+FROM python:3-alpine
+
+WORKDIR /app
+COPY generate.py .
+
+ENTRYPOINT ["python", "/app/generate.py"]
